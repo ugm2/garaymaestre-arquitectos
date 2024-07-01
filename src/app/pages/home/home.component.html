@@ -1,0 +1,10 @@
+<div class="hero">
+    <h1>Welcome to GarayMaestre Arquitectos</h1>
+    <p>We bring your architectural dreams to life.</p>
+  </div>
+  <div class="gallery">
+    <div class="gallery-item" *ngFor="let item of galleryItems">
+      <img [src]="item.image" alt="{{ item.title }}">
+      <h3>{{ item.title }}</h3>
+    </div>
+  </div>

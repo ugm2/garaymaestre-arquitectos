@@ -1,0 +1,33 @@
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background: #f8f9fa;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    color: #6c757d;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .gallery-item {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
