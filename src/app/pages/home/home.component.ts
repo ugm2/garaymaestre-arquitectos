@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import SwiperCore, { SwiperOptions, Navigation, Pagination } from 'swiper';
-
-SwiperCore.use([Navigation, Pagination]);
 
 @Component({
   selector: 'app-home',
@@ -14,14 +11,6 @@ export class HomeComponent implements OnInit {
     { image: 'assets/images/Foto-2-Viv-Colect-1080x530.jpg', title: 'Project 2' },
     { image: 'assets/images/Foto-3-Otros-Int-1080x530.jpg', title: 'Project 3' },
   ];
-
-  config: SwiperOptions = {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    navigation: true,
-    pagination: { clickable: true },
-    loop: true
-  };
 
   constructor() { }
 
