@@ -13,14 +13,9 @@ import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent,
     HomeComponent,
     ProjectsComponent,
     ServicesComponent,
-    TeamComponent,
-    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +24,6 @@ import { ContactComponent } from './pages/contact/contact.component';
     FooterComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule { }
