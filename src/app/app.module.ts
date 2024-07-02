@@ -9,6 +9,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { TeamComponent } from './pages/team/team.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ThreeDModelComponent } from './components/three-d-model/three-d-model.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -29,7 +30,8 @@ const routes: Routes = [
     ProjectsComponent,
     ServicesComponent,
     TeamComponent,
-    ContactComponent
+    ContactComponent,
+    ThreeDModelComponent
   ],
   imports: [
     BrowserModule,
