@@ -47,7 +47,7 @@
 .nav-link {
   color: var(--primary-red);
   text-decoration: none;
-  font-size: var(--text-base);
+  font-size: var(--s-4_5);
   padding: 5px 10px;
   border-radius: 4px;
 }
