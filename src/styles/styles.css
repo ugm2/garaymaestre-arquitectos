@@ -28,7 +28,7 @@ body {
 
 .content {
   flex: 1;
-  padding-top: 100px; /* Adjust based on the navbar height */
+  padding-top: 80px; /* Adjust based on the navbar height */
 }
 
 /* Ensure consistent link styles */

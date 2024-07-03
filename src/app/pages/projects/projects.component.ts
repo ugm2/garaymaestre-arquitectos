@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -7,8 +8,15 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
   projects = [
-    // { image: 'assets/images/project1.jpg', title: 'Modern Villa', description: 'A luxurious modern villa with stunning views.' },
-    // { image: 'assets/images/project2.jpg', title: 'Country House', description: 'A cozy country house with a beautiful garden.' },
-    // { image: 'assets/images/project3.jpg', title: 'Urban Apartment', description: 'A stylish apartment in the heart of the city.' },
+    { id: 'vivienda-unifamiliar', image: 'assets/images/vivienda-unifamiliar.jpg', title: 'Vivienda Unifamiliar' },
+    { id: 'residencial-colectivo', image: 'assets/images/residencial-colectivo.jpg', title: 'Residencial Colectivo' },
+    { id: 'interiorismo', image: 'assets/images/interiorismo.jpg', title: 'Interiorismo' },
+    { id: 'obras-singulares', image: 'assets/images/obras-singulares.png', title: 'Obras Singulares' },
   ];
+
+  constructor(private router: Router) {}
+
+  navigateToProject(id: string) {
+    this.router.navigate(['/projects', id]);
+  }
 }
